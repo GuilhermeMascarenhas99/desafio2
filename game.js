@@ -2,10 +2,10 @@ let nickName = document.querySelector(".barraNome");
 let inputNum = document.querySelector(".barraNum");
 let jogador = document.querySelector(".nomeJoga");
 
-function numAdivinha() {
-  numero = parseInt(Math.random() * (max - min) + min)
-  console.log("O numero é " + numero);
-}
+// function numAdivinha() {
+//   numero = parseInt(Math.random() * (max - min) + min)
+//   console.log("O numero é " + numero);
+// }
 
 function iniciarJogo() {
   jogador.innerHTML = nickName.value;
