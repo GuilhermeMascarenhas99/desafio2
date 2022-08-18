@@ -68,6 +68,7 @@ function adivinharNum() {
 
   if (inputNum.value == result) {
     resultNum.innerHTML = "Parabéns, você conseguiu adivinhar";
+    btnJogar.disabled = true;
     console.log("acertou");
   } else if (inputNum.value < result) {
     qtdTenta--;
