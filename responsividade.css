@@ -1,0 +1,16 @@
+@media(max-width: 450px){
+    .homePage {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .esquerda{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .direita{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

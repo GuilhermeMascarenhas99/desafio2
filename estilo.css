@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    --laranja: #F2890D;
+    --azul: #1180E6;
+    --cinza: #B0A3A3;
+    --preto: #000000;
+}
+
+body {
+    background-color: var(--laranja);
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0px auto;
+}
+
+.homePage {
+
+    border: none;
+    display: flex;
+    box-sizing: border-box;
+    text-align: center;
+
+    background-color: white;
+    border-radius: 20px;
+    max-width: 80%;
+    margin: 100px auto;
+}
+
+.ojogo {
+    display: flex;
+    justify-content: center;
+
+    box-sizing: border-box;
+    width: 258px;
+    height: 150px;
+
+    background: var(--azul);
+    border-radius: 20px;
+
+    font-family: 'Squada One', cursiva;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    align-items: center;
+}
+
+.esquerda {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 50px;
+}
+
+hr {
+    display: flex;
+    margin-top: 50px;
+    height: 430px;
+    
+    border: 2px solid var(--cinza);
+}
+
+.direita {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.pagePerfil,
+label {
+    font-family: 'Press Start 2P', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+input,
+select {
+    box-sizing: border-box;
+
+    width: 350px;
+    height: 42px;
+
+    border: 3px solid var(--cinza);
+    border-radius: 5px;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.botaoIniciar {
+    box-sizing: border-box;
+
+    width: 200px;
+    height: 42px;
+
+    background: var(--azul);
+    border: 3px solid var(--preto);
+    border-radius: 20px;
+
+
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    margin: 30px;
+
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.botaoJogar {
+    box-sizing: border-box;
+
+
+    width: 200px;
+    height: 42px;
+
+    background: var(--laranja);
+    border: 3px solid var(--preto);
+    border-radius: 20px;
+
+
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    margin: 30px;
+
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.boasVindas {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 52px 0px;
+}
+
+.tentativas {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 52px 0px;
+}
