@@ -60,7 +60,6 @@ let qtdTenta = 3;
 
 function adivinharNum() {
   let btnJogar = document.querySelector(".botaoJogar");
-  let alertTenta = document.querySelector(".respTenta");
   let resultNum = document.querySelector(".resultNum");
   let respTenta = document.querySelector(".respTenta")
 

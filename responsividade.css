@@ -1,20 +1,51 @@
-@media(max-width: 450px){
-    .homePage {
-        display: flex;
-        flex-direction: row;
+@media(max-width: 428px){
+    * {
+        margin: 0px;
+        padding: 0px;
         flex-wrap: wrap;
     }
-    .esquerda{
+    body {
         display: flex;
-        flex-wrap: wrap;
-    }
-
-    .direita{
-        display: flex;
-        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 100%;
+        margin: 0px;
+        padding: 0px;
     }
 
     hr {
         display: none;
+    }
+
+    .page {
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .homePage {
+        display: flex;
+        justify-content: center;
+        max-width: 40px;
+        width: 50%;
+    }
+
+    .barraNome {
+        display: flex;
+        max-width: 260px;
+    }
+
+    .selectInter {
+        display: flex;
+        max-width: 260px;
+    }
+
+    .barraNum {
+        max-width: 260px;
+    }
+    
+    label {
+        font-size: 15px;
     }
 }

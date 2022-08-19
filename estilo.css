@@ -23,6 +23,9 @@ body {
     max-width: 1440px;
     margin: 0px auto;
 }
+ .page{
+    max-width: 100%;
+ }
 
 .homePage {
 
