@@ -1,9 +1,10 @@
-@media(max-width: 428px){
+@media(max-width: 428px) {
     * {
         margin: 0px;
         padding: 0px;
         flex-wrap: wrap;
     }
+
     body {
         display: flex;
         justify-content: center;
@@ -44,7 +45,7 @@
     .barraNum {
         max-width: 260px;
     }
-    
+
     label {
         font-size: 15px;
     }
