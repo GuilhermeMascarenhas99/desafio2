@@ -1,13 +1,12 @@
 let nickName = document.querySelector(".barraNome");
 let inputNum = document.querySelector(".barraNum");
 let jogador = document.querySelector(".nomeJoga");
-
+//Função para tratamento do NickName e seletor de dificuldade 
 function iniciarJogo() {
   jogador.innerHTML = nickName.value;
   let select = document.querySelector(".selectInter");
   let value = select.options[select.selectedIndex].value;
-  console.log(value);
-
+  // console.log(value);
   switch (value) {
     case "opcao1":
       result = getRnd.option1();
@@ -29,7 +28,7 @@ function iniciarJogo() {
   }
 
 }
-
+//Função para escolha de numero aleatório automaticamente
 const getRnd = {
   option1: () => {
     let min = 1;
@@ -50,7 +49,7 @@ const getRnd = {
     return secretNumber;
   }
 }
-
+//Função para tratamento de botoes e mensagem que o usuario ira receber*
 let qtdTenta = 3;
 
 function adivinharNum() {
@@ -66,19 +65,20 @@ function adivinharNum() {
     console.log("acertou");
   } else if (inputNum.value < result) {
     qtdTenta--;
+    respTenta.innerHTML = `Você tem ${qtdTenta} tentativas`;
     resultNum.innerHTML = "O número digitado é menor";
     console.log("Numero Menor");
   } else if (inputNum.value > result) {
     qtdTenta--;
+    respTenta.innerHTML = `Você tem ${qtdTenta} tentativas`;
     resultNum.innerHTML = "O número digitado é maior";
     console.log("Numero Maior");
   } else {
     console.log("Errou");
   }
-  respTenta.innerHTML = `Você tem ${qtdTenta} tentativas`;
   if (qtdTenta == 0) {
     respTenta.innerHTML = "Você Errou !";
-    resultNum.innerHTML = "Acabou suas tentaivas recarregue a página !!";
+    resultNum.innerHTML = `O numero é ${result}, recarregue a página para tentar novamente!`;
     btnJogar.disabled = true;
   }
 }
